@@ -11,5 +11,5 @@ repositories {
 
 dependencies {
     testImplementation     'junit:junit:4.13'
-    implementation  fileTree(include: ['*.*'], dir: 'lib')
+    implementation  fileTree(include: ['*.jar'], dir: 'lib')
 }

@@ -16,10 +16,12 @@ public class Main {
      */
     public static void main(String[] args) throws Exception {
         // TODO code application logic here
-        new ListAvailablePorts().list();
-        
+        // new ListAvailablePorts().list();
+        new SerialData().getInputStream();
+
+        new SerialData().getOutputStream();
         // connects to the port which name (e.g. COM1) is in the first argument  
-        new RS232Example().connect("COM1");  
+        // new RS232Example().connect("COM1");  
           
         // send HELO message through serial port using protocol implementation  
         // CommPortSender.send(new ProtocolImpl().getMessage("HELO"));
